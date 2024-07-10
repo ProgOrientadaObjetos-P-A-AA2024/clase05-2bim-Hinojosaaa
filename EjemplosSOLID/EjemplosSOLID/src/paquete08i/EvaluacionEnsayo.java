@@ -9,7 +9,7 @@ package paquete08i;
  *
  * @author reroes
  */
-public class EvaluacionEnsayo implements EvaluacionTipoDos {
+public class EvaluacionEnsayo implements EvaluacionTipoDos { //Implements se usa para trabajar con interfaces
 
     private int numeroProblemas;
     private double totalProblemas;
@@ -32,7 +32,10 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return totalProblemas;
     }
     
-    
+    /*
+    ocupamos el establecer y el obtener porque estamos trabajando con interfaces,
+    lo cual nos obliga a trabajar con estos dos atributos
+    */
     @Override
     public void establecerPromedioEnsayo() {
 
