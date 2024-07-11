@@ -27,8 +27,18 @@ public class Principal {
         
         System.out.println("---------------------------");
         
+        APIDisneyPlus api3 = new APIDisneyPlus();
+        api3.establecerApiKey("464646");
+        
+        GeneradorPeliculas gp3 = new GeneradorPeliculas();
+        gp3.establecerLlave(api3);
+        gp3.establecerUrl("http://api.movie?api=123");
+        System.out.println(gp3.obtenerUrl());
+        
+        System.out.println("---------------------------");
+        
         APIDirecttvGo api4 = new APIDirecttvGo();
-        api2.establecerApiKey("464646");
+        api4.establecerApiKey("464646");
         
         GeneradorPeliculas gp4 = new GeneradorPeliculas();
         gp4.establecerLlave(api4);
